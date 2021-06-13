@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProjectBaoCao</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="ListFilmType">
+        <item>Hài kịch</item>
+        <item>Hoạt hình</item>
+        <item>Tâm lý xã hội</item>
+        <item>Tình cảm</item>
+    </string-array>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blue"
+    tools:context=".DramaWebFragment">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#1E5C9E"
+        android:id="@+id/sourceWeb"
+        android:text="THÔNG TIN PHIM"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sourceWeb"
+        android:orientation="horizontal"
+        android:id="@+id/btweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textAllCaps="false"
+            android:id="@+id/btChoice1"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_main"
+            android:text="Top Films"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/contenWebview"
+            app:layout_constraintHorizontal_bias="0.085" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btChoice2"
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_main"
+            android:text="On Air Time"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@id/contenWebview"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toRightOf="@id/btChoice1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btChoice3"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            android:background="@drawable/button_cancel"
+            android:text="Đăng xuất"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/contenWebview"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintLeft_toRightOf="@id/btChoice2"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/contenWebview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btweb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

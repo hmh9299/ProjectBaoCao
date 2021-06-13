@@ -1,0 +1,105 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_gravity="center"
+    android:textAllCaps="false"
+    android:background="@drawable/blue"
+    android:foregroundGravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="228dp"
+        android:layout_height="155dp"
+        android:src="@drawable/movie_icon"
+        app:layout_constraintBottom_toTopOf="@id/txtEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDangNhap"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textColor="#043850"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_layout"
+        android:hint="Email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDangNhap" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_layout"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btLogin"
+        android:layout_width="120dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_main"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@id/btRegister"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPass" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btRegister"
+        android:layout_width="120dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_light"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btLogin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btForgotPassword"
+        android:layout_width="120dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_light"
+        android:gravity="center"
+        android:text="Quên mật khẩu"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fragment_layout"
+    android:layout_height="100dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="40dp"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/cardmovie_img"
+        android:layout_width="35dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="386dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardmovie_img"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/cardmovie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="123"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardmovie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="123"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/cardmovie_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="123"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cardmovie_date"
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:text="123"
+                android:textSize="17dp" />
+
+            <RatingBar
+                android:id="@+id/cardmovie_review"
+                style="@style/RatingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:numStars="5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/cardmovie_edit"-->
+<!--        android:layout_width="34dp"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:src="@drawable/ic_baseline_edit_24"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/linearLayout" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

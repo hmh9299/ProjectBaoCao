@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Phim của tôi"
+        android:id="@+id/mListMovie"
+        android:icon="@drawable/ic_baseline_microwave_24"/>
+    <item android:title="Tin nhanh"
+        android:id="@+id/mNewsMovie"
+        android:icon="@drawable/ic_baseline_star_24"/>
+    <item android:title="Thông tin"
+        android:id="@+id/mInfo"
+        android:icon="@drawable/ic_baseline_whatshot_24"/>
+</menu>
